@@ -1,0 +1,33 @@
+#home .carousel-item{
+	height: 100vh;
+	background-position: center;
+    background-size: cover;
+}
+
+.background1{
+	background-image: url('assets/images/background/bg1.png');
+}
+
+.background2{
+	background-image: url('assets/images/background/bg2.png');
+}
+
+.background3{
+	background-image: url('assets/images/background/bg3.png');
+}
+
+.skill{
+	margin-top: 20px;
+}
+
+#aboutme{
+	background-image: url('assets/image/bio/bg.png');
+	background-repeat: no-repeat;
+	background-size: 700px;
+	background-position-x: center;
+	background-position-y: top;
+}
+
+.experience{
+	margin-top: 24px;
+}
