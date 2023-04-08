@@ -1,0 +1,680 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Is the BRICS an Optimum Currency Area? An Analysis of Economic Integration and Policy Coordination</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="684d3c73-4fc4-493d-ac64-cb28ff7f08a4" class="page sans"><header><h1 class="page-title">Is the BRICS an Optimum Currency Area? <strong>An Analysis of Economic Integration and Policy Coordination</strong></h1><table class="properties"><tbody><tr class="property-row property-row-created_by"><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCreatedBy"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 10.4229C6.05176 10.4229 4.54785 11.1133 3.83008 11.9131C2.90039 10.9082 2.33301 9.55469 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 9.55469 13.1064 10.9082 12.1699 11.9131C11.4521 11.1133 9.94824 10.4229 8 10.4229ZM8 9.30176C9.32617 9.30859 10.3516 8.18066 10.3516 6.71094C10.3516 5.33008 9.31934 4.18164 8 4.18164C6.6875 4.18164 5.6416 5.33008 5.64844 6.71094C5.65527 8.18066 6.68066 9.28809 8 9.30176Z"></path></svg></span>Created by</th><td><span class="user"><span class="icon text-icon user-icon"><span class="user-icon-inner">N</span></span>Nibir Das</span></td></tr></tbody></table></header><div class="page-body"><h2 id="7eb80dda-f7bf-4e9e-9238-58f7c1a751b1" class=""><strong>Abstract</strong></h2><p id="495c6b18-529f-481c-988e-de2e48cdac3a" class="">The BRICS countries (Brazil, Russia, India, China and South Africa) have emerged as a significant force in the global economy, accounting for about 20% of the world GDP and 26% of the global landmass. They have also increased their economic integration and cooperation in various fields, such as trade, investment, finance, digital economy and sustainable development. However, despite their common aspirations and interests, they also face significant challenges and divergences in terms of their economic structures, policies and institutions. This paper examines whether BRICS can be considered as an optimum currency area (OCA), a region that would benefit from adopting a common currency or a fixed exchange rate regime. The paper applies the OCA theory and criteria to assess the degree of economic convergence and policy coordination among BRICS countries. The paper also analyzes the potential benefits and costs of forming a monetary union among BRICS countries, as well as the feasibility and desirability of such a project. The paper concludes that BRICS is not an OCA at present, due to the lack of sufficient economic integration, policy coordination and institutional harmonization among its members. Moreover, the paper argues that forming a monetary union among BRICS countries is neither feasible nor desirable at this stage, given the high costs and risks involved, as well as the alternative options available for enhancing their economic cooperation.</p><h3 id="dd5fa74c-b225-416a-8cb7-e2e28411646f" class=""><strong>Keywords:</strong> BRICS; optimum currency area; economic integration; policy coordination; monetary union.</h3><h2 id="c37f4c21-50c6-4959-9e2a-5ca73736b329" class=""><strong>Introduction</strong></h2><p id="30457b1d-dfaa-41a8-8d0b-74c63a07e47e" class="">New state associations, such as regional and interregional organizations, have become popular as a result of globalization and regionalization. A prime example of such a partnership is BRICS, which unites five significant regional powers from four continents and five major civilizations. BRICS is an acronym for a bloc of emerging economies: Brazil, Russia, India, China, and South Africa. The BRICS nations are all equally dissatisfied with the geopolitical situation as it currently stands and their respective positions in the current system of international relations. They collaborate in an effort to create a new, polycentric system of international relations as they pursue economic success, adequate social welfare, and increased personal political influence.</p><p id="c463d141-ca8f-4c09-b3ef-c9e7b8f959bb" class="">The term BRIC was coined in 2001 by Jim O&#x27;Neill, an economist at Goldman Sachs, who predicted that these four countries would become major drivers of global growth in the 21st century (O&#x27;Neill, 2001). In 2010, South Africa joined the group at China&#x27;s invitation, making it BRICS. According to the World Bank (2021), BRICS countries account for about 40% of the world population, 25% of the world GDP (in nominal terms), 30% of the world land area, 18% of the world trade volume, and 4 trillion US dollars of foreign exchange reserves.</p><p id="d4b7fb6d-f494-45b3-892a-62f9401fbb38" class="">Since 2009, BRICS countries have held annual summits to discuss various issues of common interest and cooperation. They have also established several institutions and mechanisms to enhance their economic and political ties within the bloc and with other developing countries. These include:</p><ul id="ef2d60f8-8c80-4e74-af79-b554a0716658" class="bulleted-list"><li style="list-style-type:disc">The New Development Bank (NDB), which provides financing for infrastructure and sustainable development projects in BRICS countries and other emerging economies.</li></ul><ul id="15bad297-257a-407c-bb53-52e2a1270473" class="bulleted-list"><li style="list-style-type:disc">The Contingent Reserve Arrangement (CRA), which provides mutual support for short-term balance of payments difficulties among BRICS countries.</li></ul><ul id="7aa80eab-6469-4c5f-b51c-1fc197e1d195" class="bulleted-list"><li style="list-style-type:disc">The BRICS Business Council (BBC), which facilitates dialogue and partnership between the private sectors of BRICS countries.</li></ul><ul id="d58874e5-c774-4603-a04a-8662707855be" class="bulleted-list"><li style="list-style-type:disc">The BRICS Think Tank Council (BTTC), which provides intellectual support and policy recommendations for BRICS cooperation.</li></ul><p id="246ae9b8-7e3c-4632-a8dc-4c835d783054" class="">BRICS countries have also advocated for a more democratic and multipolar world order that reflects their growing role and voice in global affairs. They have called for reforms in international institutions such as the United Nations Security Council (UNSC), the International Monetary Fund (IMF), and the World Bank to make them more representative and responsive to the needs and interests of developing countries. They have also supported multilateralism, regionalism, south-south cooperation, sustainable development, human rights, peace and security as key principles for global governance.</p><p id="6bdc0e8b-527c-41f1-8c9c-738590d12f11" class="">Integration is considered to be the deepest form of international economic cooperation. Financial integration is essential for nations to gain from economic growth through risk sharing, efficiency improvements in resource allocation, and decreases in transaction costs and macroeconomic volatility. Monetary integration is an essential component of financial integration and an influential proponent of a unified financial system. Optimum Currency Area (OCA) is a theory proposed by the economist R. Mundell which has been used extensively to estimate the costs of monetary integration. One of the most debated issues regarding BRICS cooperation is whether these countries should adopt a common currency or not. A common currency is a monetary arrangement where two or more countries share the same legal tender and exchange rate regime. A common currency can bring significant benefits to participating countries by reducing transaction costs, enhancing price transparency, facilitating trade and investment flows, promoting macroeconomic stability and fostering economic convergence. However, a common currency also entails significant costs and challenges for participating countries in terms of losing policy flexibility, competitiveness, and sovereignty. A common currency also requires a high degree of political commitment and institutional integration that may not be feasible or desirable for each country.</p><p id="0394742c-5df6-498d-94df-3d4cac9b0a71" class="">Therefore, the decision to adopt a common currency should be based on a careful assessment of the costs and benefits of such a move, as well as the readiness and willingness of each country to surrender some degree of autonomy and diversity for the sake of greater unity and efficiency. This assessment can be guided by the theory of optimum currency areas (OCA), which was developed by Robert Mundell in 1961.</p><p id="16478a48-67a2-43a7-ae67-8d86e1c621af" class="">BRICS countries are in talks to have their own monetary union. However, do they qualify to be an optimum currency area? To examine this, we have to check if all the conditions of OCA are satisfied.</p><h2 id="e5e6b0a0-6f9d-4251-9547-d4c906abfce6" class=""><strong>Criteria for Optimum Currency Area:</strong></h2><p id="fc98e718-c02a-497d-befe-8591e8eb80ba" class="">According to the theory of optimum currency areas, the optimal area for a system of fixed exchange rates, or a common currency, is one that is highly economically integrated. Economic integration means free flows of goods and services (trade), financial capital (assets) and physical capital, and workers/labour (immigration and emigration). There are four main criteria for an OCA:</p><ul id="091bbb2f-7739-4e12-9cd0-e612824b254e" class="bulleted-list"><li style="list-style-type:disc">High labour mobility throughout the area: This means that workers can move freely across borders in search of better employment opportunities and living standards. This can help to adjust to asymmetric shocks (i.e., shocks that affect some countries more than others) by reallocating labour from depressed regions to booming regions, thereby reducing unemployment and income disparities.</li></ul><ul id="9d9e4519-c24a-41a5-b158-08530ea639a0" class="bulleted-list"><li style="list-style-type:disc">Capital mobility and price and wage flexibility: This means that capital can flow freely across borders in search of higher returns and lower risks. This can also help to adjust to asymmetric shocks by reallocating capital from less productive sectors to more productive sectors, thereby enhancing efficiency and growth. Moreover, price and wage flexibility means that prices and wages can adjust quickly to changes in demand and supply conditions, thereby restoring equilibrium in the markets.</li></ul><ul id="ecc6ee39-b46c-433c-9d19-fd97ae7b4a5e" class="bulleted-list"><li style="list-style-type:disc">A currency risk-sharing or fiscal mechanism: This means that there is a system of transfers or insurance among countries in the OCA to share risk across countries. This can help to cushion the impact of asymmetric shocks by providing financial support or compensation to countries that are adversely affected by such shocks, thereby reducing hardship and instability.</li></ul><ul id="eca57207-e775-45a7-a9d3-bfde4ada7b17" class="bulleted-list"><li style="list-style-type:disc">Similar business cycles: This means that countries in the OCA have similar economic structures, policies, and shocks that affect them in similar ways. This can reduce the likelihood and severity of asymmetric shocks by ensuring that countries face similar economic conditions and challenges, thereby enhancing harmony and coordination.</li></ul><p id="6ad71e24-d181-4c61-9002-4d5408e3a1db" class="">Some economists also suggest a fifth criterion for an OCA:</p><ul id="6e3c46aa-0f54-444a-b578-422aa43a3a26" class="bulleted-list"><li style="list-style-type:disc">Production diversification within the region: This means that countries in the OCA have diversified production structures that make them less vulnerable to sector-specific shocks. This can also reduce the likelihood and severity of asymmetric shocks by ensuring that countries have different sources of income and growth, thereby increasing resilience and stability.</li></ul><p id="2ffae1ca-2056-4399-915e-8e3b657d9db4" class="">This paper applies the OCA theory and criteria to assess the degree of economic integration, convergence and synchronization; the degree of asymmetric shocks; and the degree of policy coordination, fiscal transfers and labor mobility among BRICS countries. The paper also analyzes the potential benefits and costs of forming a monetary union among BRICS countries, as well as the feasibility and desirability of such a project. The paper is organized as follows: Section 2 reviews the literature on BRICS economic integration and monetary cooperation; Section 3 examines whether BRICS meets the OCA criteria; Section 4 discusses the benefits and costs of forming a monetary union among BRICS countries; Section 5 evaluates the feasibility and desirability of forming a monetary union among BRICS countries; Section 6 concludes with some policy implications.</p><h2 id="d4b88619-83ec-4c55-acd7-780f1712e2f6" class=""><strong>Literature Review</strong></h2><p id="3f4f2888-f558-433e-848f-edf48462ac47" class="">The literature on BRICS economic integration and monetary cooperation can be divided into two strands: one strand focuses on describing and analyzing the current state and prospects of BRICS economic integration and cooperation, using various indicators and measures, such as trade, investment, finance, infrastructure, digital economy and sustainable development; the other strand focuses on exploring and proposing various scenarios and models of BRICS monetary cooperation, ranging from currency swap arrangements, regional payment systems, common currency baskets, to full-fledged monetary unions. The following paragraphs provide a brief overview of these two strands of literature.</p><p id="fa0f60e1-4777-4e5f-8139-2421f45de2f0" class="">The first strand of literature on BRICS economic integration and cooperation can be further divided into two sub-strands: one sub-strand adopts a descriptive and positive approach to analyze the current state and trends of BRICS economic integration and cooperation, using various indicators and measures; the other sub-strand adopts a normative and prescriptive approach to evaluate the potential and challenges of BRICS economic integration and cooperation, using various criteria and benchmarks. Some examples of the first sub-strand are: Hooijmaaijers (2021), who examines the bilateral economic relations among BRICS countries in terms of trade, investment and construction contracts from 2009 to 2019; Chatterjee and Naka (2022), who analyze the political and economic transformations of BRICS countries through the lens of land; Käkönen (2019a), who provides an overview of BRICS cooperation in various fields, such as trade, investment, finance, energy, climate change and security; Lukin (2019a), who assesses the achievements and prospects of BRICS cooperation in areas such as global governance reform, development assistance, digital economy and human rights. Some examples of the second sub-strand are: Stuenkel (2015), who evaluates the impact and potential of BRICS cooperation on global order; Roberts et al. (2017), who examine the challenges and opportunities for BRICS cooperation in terms of institutionalization, representation and legitimacy; Kirton and Larionova (2018), who measure the compliance and performance of BRICS countries with their summit commitments; Hooijmaaijers and Keukeleire (2016), who compare BRICS with other regional groupings in terms of their degree of institutionalization.</p><p id="56c8fb4a-6679-438e-b6c3-1d09c849e927" class="">The second strand of literature on BRICS monetary cooperation can also be further divided into two sub-strands: one sub-strand adopts a descriptive and positive approach to analyze the current state and trends of BRICS monetary cooperation, using various indicators and measures; the other sub-strand adopts a normative and prescriptive approach to explore and propose various scenarios and models of BRICS monetary cooperation, ranging from currency swap arrangements, regional payment systems, common currency baskets, to full-fledged monetary unions. Some examples of the first sub-strand are: Nogueira Batista (2021), who assesses the progress and shortcomings of the BRICS financing mechanisms, namely the CRA and the NDB; Duggan et al. (2022), who examine the challenges and opportunities for BRICS cooperation in global governance and South-South cooperation; Arapova (2019), who analyzes the role and impact of the BRICS CRA on global financial stability; Rewizorski (2019), who evaluates the performance and potential of the BRICS NDB on development finance. Some examples of the second sub-strand are: Zhang et al. (2015), who propose a common currency basket system for BRICS countries based on a dynamic weighted average method; Liu et al. (2017), who explore a scenario of a BRICS monetary union with a common currency named “BRICSO”; Käkönen (2019b), who suggest a regional payment system for BRICS countries based on a digital currency platform; Lukin (2019b), who advocate a gradual approach to BRICS monetary integration based on enhancing policy coordination and institutional harmonization.</p><p id="370a490e-0f26-4b9d-b833-d0d6c6399aab" class="">The literature review shows that there is a rich and diverse body of research on BRICS economic integration and monetary cooperation, covering various aspects and dimensions of this topic. However, there is also a gap in the literature, as most of the existing studies do not explicitly apply the OCA theory and criteria to assess whether BRICS can be considered as an OCA, a region that would benefit from adopting a common currency or a fixed exchange rate regime. Moreover, most of the existing studies do not systematically analyze the potential benefits and costs of forming a monetary union among BRICS countries, as well as the feasibility and desirability of such a project. Therefore, this paper aims to fill this gap by applying the OCA theory and criteria to assess whether BRICS meets the OCA criteria; and by systematically analyzing the potential benefits and costs of forming a monetary union among BRICS countries, as well as the feasibility and desirability of such a project.</p><h2 id="fc4aaf8e-8742-45b2-9470-c329deb174e6" class=""><strong>Is BRICS an Optimum Currency Area?</strong></h2><p id="9939e2da-8aa2-4ee5-993d-65828ebbcd71" class="">In this section, we apply the OCA theory and criteria to assess whether BRICS can be considered as an OCA, a region that would benefit from adopting a common currency or a fixed exchange rate regime. We use various indicators and data sources to measure the degree of economic integration, convergence and synchronization; the degree of asymmetric shocks; and the degree of policy coordination, fiscal transfers and labor mobility among BRICS countries. We also compare BRICS with other existing or proposed OCAs, such as the European Economic and Monetary Union (EMU), the East Asian Economic Community (EAEC), and the Gulf Cooperation Council (GCC).</p><h3 id="ae9aa2ce-218a-44ac-a612-15eda5ad9cc0" class=""><strong>Economic Integration, Convergence and Synchronization</strong></h3><p id="ca635f72-ae96-4385-b830-6b731d5f2f64" class="">One of the main criteria for an OCA is a high degree of economic integration, convergence and synchronization among its members. This implies that the countries share similar economic structures, policies and institutions; that they have a high volume of trade and investment flows among themselves; that they have similar levels of income per capita and inflation rates; and that they have synchronized business cycles and growth rates. A high degree of economic integration, convergence and synchronization can reduce the likelihood and magnitude of asymmetric shocks; increase the benefits of eliminating exchange rate fluctuations and transaction costs; and enhance the credibility and effectiveness of a common monetary policy.</p><p id="fbd4cc34-d216-4b5b-99e3-51759b9854df" class="">To measure the degree of economic integration, convergence and synchronization among BRICS countries, we use various indicators and data sources, such as trade intensity index, intra-BRICS trade share, foreign direct investment (FDI) flows and stocks, GDP per capita (PPP), inflation rate, real effective exchange rate (REER), business cycle correlation and growth rate correlation. We also compare BRICS with other existing or proposed OCAs, such as the EMU, the EAEC, and the GCC.</p><p id="d143c17e-8ef3-49bd-9bd3-7003bb71079b" class="">
+</p><h3 id="e7a449bd-2dbb-4f24-90db-cb91fa2cd39f" class=""><strong>Trade Intensity Index</strong></h3><p id="57dbdc73-aa2d-4353-a1f1-c1d4b7a51422" class="">The Trade Intensity Index (TII) measures the extent of trade relations between two countries or regions relative to their overall trade with the world. It is calculated as the ratio of the share of exports from country i to country j in total exports of country i to the share of imports by country j in total world imports. A value greater than one indicates that country i trades more intensively with country j than with the world on average; a value less than one indicates that country i trades less intensively with country j than with the world on average.</p><p id="a6faab35-c8a0-4eb8-836f-ee41e8baec92" class="">The formula for calculating TII is:</p><p id="a58b12cd-115b-4f39-b738-8f27eb9d6be0" class="">TII = (Xij / Xit) / (Xwj / Xwt)</p><p id="35582adc-2afb-48dd-93ae-a11babad1d26" class="">where Xij is the value of exports from country i to country j, Xit is the total value of exports from country i to the world, Xwj is the total value of imports by country j from the world, and Xwt is the total value of world trade.</p><p id="6f421853-3822-4804-b444-d3ecbaf09c6e" class="">Using data from UN Comtrade database for 2015, the TII for intra-BRICS trade and BRICS-EU trade is as follows:</p><table id="78d91b71-3cda-48e5-bcc2-78b313261ac8" class="simple-table"><tbody><tr id="908e7107-2072-40f2-878a-d3cbbe7d7b32"><td id="DI|U" class="">Country pair</td><td id="TFlX" class="">TII</td></tr><tr id="4d2efb20-6701-48a2-b500-059735f10168"><td id="DI|U" class="">Brazil-China</td><td id="TFlX" class="">2.67</td></tr><tr id="f82bd66f-61af-4576-8771-79b253c7cf34"><td id="DI|U" class="">Brazil-India</td><td id="TFlX" class="">1.54</td></tr><tr id="c87f1b57-5a9d-4d39-ba7c-5c996766537c"><td id="DI|U" class="">Brazil-Russia</td><td id="TFlX" class="">1.09</td></tr><tr id="c8e37284-28d2-4d10-9cec-984bf9d7e934"><td id="DI|U" class="">Brazil-South Africa</td><td id="TFlX" class="">1.48</td></tr><tr id="7d94b9a1-77ae-4180-b54b-f5c25fc3f6c2"><td id="DI|U" class="">China-India</td><td id="TFlX" class="">0.77</td></tr><tr id="70cdaaa8-2ab6-4b9a-8cd8-37a8db8cb51e"><td id="DI|U" class="">China-Russia</td><td id="TFlX" class="">0.83</td></tr><tr id="8ff7974c-4ae0-423b-a406-5f56c14d29d3"><td id="DI|U" class="">China-South Africa</td><td id="TFlX" class="">1.01</td></tr><tr id="4920a4e6-e6f2-4562-96df-290722641973"><td id="DI|U" class="">India-Russia</td><td id="TFlX" class="">0.38</td></tr><tr id="25062613-6cc8-4b67-8e28-85aeaaa4c8fa"><td id="DI|U" class="">India-South Africa</td><td id="TFlX" class="">0.75</td></tr><tr id="e15553c4-323b-4b74-9981-b10690dd5b3f"><td id="DI|U" class="">Russia-South Africa</td><td id="TFlX" class="">0.42</td></tr></tbody></table><p id="b059d733-f16c-4120-aeb3-32f4b0c02e3f" class="">Source: Calculated from UN Comtrade data</p><p id="4306d14c-98cd-474c-a99e-b67f7672a6f9" class="">The table shows that Brazil has a high TII with all other BRICS countries, indicating that it trades more with them than expected based on its share in world trade. China also has a high TII with Brazil and South Africa, but a low TII with India and Russia, indicating that it trades less with them than expected based on its share in world trade. India has a low TII with all other BRICS countries, indicating that it trades less with them than expected based on its share in world trade. Russia has a low TII with all other BRICS countries except China, indicating that it trades more with China than expected based on its share in world trade. South Africa has a moderate TII with all other BRICS countries, indicating that it trades as expected based on its share in world trade.</p><p id="051d85d8-9efa-40da-ade9-f9e2b5ba2cc9" class="">The following table shows the TII for BRICS-EU trade:</p><table id="62e5a17e-169a-4f86-b144-4e57f582d719" class="simple-table"><tbody><tr id="89b0ab1a-7483-4801-92a4-9a301628a6f9"><td id="vgm`" class="">Country pair</td><td id="h`:Y" class="">TII</td></tr><tr id="5c3b2851-43ac-4a92-8cba-f685cfaa47ff"><td id="vgm`" class="">Brazil-EU</td><td id="h`:Y" class="">0.86</td></tr><tr id="7dbeaf6a-a8a0-4faf-96a7-56d224dc4ef7"><td id="vgm`" class="">China-EU</td><td id="h`:Y" class="">1.06</td></tr><tr id="ddb27271-3539-4547-83d2-ae5dd96f252f"><td id="vgm`" class="">India-EU</td><td id="h`:Y" class="">0.76</td></tr><tr id="bc6439e7-7592-44da-91e9-33cb357bc32c"><td id="vgm`" class="">Russia-EU</td><td id="h`:Y" class="">1.28</td></tr><tr id="5dd40229-5359-4e16-8d25-f9f93326793d"><td id="vgm`" class="">South Africa-EU</td><td id="h`:Y" class="">1.16</td></tr></tbody></table><p id="9f5c69e2-9286-4ecc-b494-5f542cd60302" class="">Source: Calculated from UN Comtrade data</p><p id="dfc982b5-3e33-4f0f-8373-9c5c5501de3f" class="">The table shows that Russia has the highest TII with EU, indicating that it trades more with EU than expected based on its share in world trade. China also has a high TII with EU, indicating that it trades more with EU than expected based on its share in world trade. South Africa has a moderate TII with EU, indicating that it trades as expected based on its share in world trade. Brazil and India have a low TII with EU, indicating that they trade less with EU than expected based on their share in world trade.</p><p id="13afddfc-8c05-48a1-9c99-c6f4a18c3cd1" class="">The analysis of TII suggests that intra-BRICS trade is not very intense compared to their share in world trade, except for Brazil which has a high degree of integration with other BRICS countries. BRICS-EU trade is also not very intense compared to their share in world trade, except for Russia and China which have a high degree of integration with EU.</p><p id="f8f0a48a-6f35-4804-b1bf-ca841b67774b" class="">
+</p><h3 id="9fbd48f2-ad34-4714-8dbd-8c91eb6eed83" class=""><strong>Intra-BRICS Trade Share</strong></h3><p id="4aa61900-b1d0-4a1b-9ac9-2750a38b8865" class="">The intra-BRICS trade share measures the proportion of trade among BRICS countries in their total trade with the world. It is calculated as the sum of exports and imports among BRICS countries divided by the sum of their total exports and imports with the world. A higher value indicates a higher degree of trade integration among BRICS countries.</p><p id="48175d1d-4da8-4252-a802-96d286f72eab" class="">Table 2 shows the intra-BRICS trade share for 2019. The data are obtained from UN Comtrade Database. The table shows that BRICS countries have a moderate degree of trade integration among themselves, with an average value of 16.5%. China has the highest intra-BRICS trade share (21.6%), followed by South Africa (19.8%), India (18.4%), Russia (14%) and Brazil (8%). The average intra-BRICS trade share is lower than that for EMU (45.7%), EAEC (29%) and GCC (23%).</p><p id="3fc24837-31d5-4934-921f-b9cb8fc4f1a8" class="">Table 2: Intra-BRICS Trade Share (2019)</p><table id="f7b90a35-7436-4c07-8aac-a9b23f01e6cf" class="simple-table"><tbody><tr id="f29b4912-ce2f-45a6-b3d2-12c755d83b27"><td id="G}kN" class="">Country/Region</td><td id="p=o~" class="">Intra-BRICS Trade Share (%)</td></tr><tr id="9675cf71-d425-4100-bba4-368c3252eaab"><td id="G}kN" class="">Brazil</td><td id="p=o~" class="">8</td></tr><tr id="f37caf60-3916-4fb6-af14-d878b9084d97"><td id="G}kN" class="">Russia</td><td id="p=o~" class="">14</td></tr><tr id="10582e07-d236-4c8c-9315-8f7b7abd1f44"><td id="G}kN" class="">India</td><td id="p=o~" class="">18.4</td></tr><tr id="495c9926-0cf7-40fc-ab5d-43a6cd47fd15"><td id="G}kN" class="">China</td><td id="p=o~" class="">21.6</td></tr><tr id="b3ece303-e614-4c5c-a309-92a27910d40c"><td id="G}kN" class="">South Africa</td><td id="p=o~" class="">19.8</td></tr><tr id="2c5f0e7b-557a-4858-acb0-a62547d5837b"><td id="G}kN" class="">Average</td><td id="p=o~" class="">16.5</td></tr><tr id="efd7f061-439b-48c7-851c-37971582bbc2"><td id="G}kN" class="">EMU</td><td id="p=o~" class="">45.7</td></tr><tr id="ded1c1b4-ee78-492a-9f19-80d7b2494282"><td id="G}kN" class="">EAEC</td><td id="p=o~" class="">29</td></tr><tr id="e2d52f54-0217-4a3b-ae58-d7d56cd03650"><td id="G}kN" class="">GCC</td><td id="p=o~" class="">23</td></tr></tbody></table><p id="e63b71a3-4487-46a2-8524-8977055e49c0" class="">Source: UN Comtrade Database</p><p id="9575b003-0e02-481e-a2fb-df2d07ce3844" class="">
+</p><h3 id="68a5cfe4-4b4e-4810-87a8-2441b5840876" class=""><strong>Foreign Direct Investment Flows and Stocks</strong></h3><p id="48871c7a-7279-47ba-ad12-42420238022d" class="">Foreign direct investment (FDI) flows and stocks measure the extent of investment relations between two countries or regions. FDI flows refer to the amount of investment made by an entity resident in one country to acquire a lasting interest in an enterprise resident in another country in a given year; FDI stocks refer to the value of FDI assets and liabilities accumulated by an entity resident in one country in relation to an enterprise resident in another country at a given point in time. A higher value indicates a higher degree of investment integration between two countries or regions.</p><p id="273c9c61-13c3-4076-8f4b-6ae6eb75ef0f" class="">The following table shows the FDI flows and stocks for BRICS and other OCAs for 2019:</p><table id="f0f063e7-a569-4cda-980d-52bacf1090a5" class="simple-table"><tbody><tr id="d8f2e23d-69c2-4743-af04-23008e029f83"><td id="dbXy" class="">Region</td><td id="CV|L" class="">FDI inflows (US$ billion)</td><td id="w&lt;Hw" class="">FDI outflows (US$ billion)</td><td id="Ar|r" class="">FDI inward stock (US$ billion)</td><td id="orEf" class="">FDI outward stock (US$ billion)</td></tr><tr id="af1367d9-11cf-493e-a636-4a1b09c0901c"><td id="dbXy" class="">BRICS</td><td id="CV|L" class="">263</td><td id="w&lt;Hw" class="">229</td><td id="Ar|r" class="">3,321</td><td id="orEf" class="">2,674</td></tr><tr id="49678e5d-6802-4798-8736-65fa2cfc0dd7"><td id="dbXy" class="">EMU</td><td id="CV|L" class="">414</td><td id="w&lt;Hw" class="">505</td><td id="Ar|r" class="">8,827</td><td id="orEf" class="">10,217</td></tr><tr id="1d869557-cab3-4eb1-a61d-694461658f28"><td id="dbXy" class="">EAEC</td><td id="CV|L" class="">75</td><td id="w&lt;Hw" class="">67</td><td id="Ar|r" class="">1,057</td><td id="orEf" class="">1,029</td></tr><tr id="7adaa90f-16c0-493a-be9e-625a55243804"><td id="dbXy" class="">GCC</td><td id="CV|L" class="">26</td><td id="w&lt;Hw" class="">45</td><td id="Ar|r" class="">494</td><td id="orEf" class="">1,061</td></tr></tbody></table><p id="ecee347d-ee68-41ef-98fe-a92ac0be29fc" class="">Source: UNCTAD</p><p id="310be30e-3ce0-43a7-bbe6-9c29135ab513" class="">As we can see from the table, BRICS has a relatively high FDI inflows and outflows compared to other OCAs, indicating a high degree of investment integration among its members. This is partly due to the large size and growth potential of BRICS economies, which attract both domestic and foreign investors. Moreover, BRICS countries have increased their outward FDI in recent years, especially in Africa and Asia, reflecting their ambition to expand their global influence and access new markets and resources.</p><p id="f615b547-15f2-4dba-9730-05fcb511be93" class="">
+</p><h3 id="2b4ace6d-755e-49be-a9f3-f7a3a701b644" class=""><strong>GDP per Capita (PPP)</strong></h3><p id="0898f7c3-7ce5-4928-8823-bc74f183f2db" class="">GDP per capita (PPP) measures the level of income per person in a country or region, adjusted for differences in purchasing power across countries or regions. It is calculated as the ratio of GDP (PPP) to population size. A higher value indicates a higher level of income per person.</p><figure id="c6f80dc6-ebe3-469f-9400-58e5ff0d7d01" class="image"><a href="https://lh5.googleusercontent.com/xyTmFOzvKD35Y3MjiUW2LTdhxWHmP7jWcdX4NP5w24gpHxYRfMzb7xhI-wgJzYO-haKDvm6EAq2CWJoWADXa2JHaeT9P2G7iLdOOko7r7VVCgogdRdYpJKFEhgAzLvsB_oFOzPolnM1lwwcLrEGxuhI"><img src="https://lh5.googleusercontent.com/xyTmFOzvKD35Y3MjiUW2LTdhxWHmP7jWcdX4NP5w24gpHxYRfMzb7xhI-wgJzYO-haKDvm6EAq2CWJoWADXa2JHaeT9P2G7iLdOOko7r7VVCgogdRdYpJKFEhgAzLvsB_oFOzPolnM1lwwcLrEGxuhI"/></a></figure><p id="e4ba8a29-5f77-417e-ab8f-6f61cfd8d6e0" class="">In 2021, Russia and China were the BRICS nations with the highest estimated GDP per capita, ranging between 12,000 and 13,000 US dollars per individual. In contrast, Brazil and South Africa&#x27;s GDP per capita hovered around 7,000 US dollars, and India&#x27;s GDP per capita was slightly above 2,000 US dollars. This stark difference is notable when compared to the overall GDP figures, where China leads as the most substantial economy, with India following in second place. The discrepancy can be attributed to the vast differences in population sizes among these countries.</p><p id="e064cd24-e57c-43b1-8eaa-00ae22c3826c" class="">For instance, China&#x27;s population and total GDP are approximately ten times greater than Russia&#x27;s, resulting in similar GDP per capita figures for both nations. In addition, India&#x27;s population is 23 times larger than South Africa&#x27;s, yet its GDP is only seven times greater. Consequently, South Africa has a higher GDP per capita than India, even though it possesses the smallest economy among the BRICS countries.</p><h3 id="0363c5b0-7ade-4758-bbc5-f20430a443c3" class=""><strong>Inflation Rate</strong></h3><p id="d6608cd2-3460-47b6-ae1a-8867820d0b59" class="">The inflation rate measures the percentage change in the average price level of a basket of goods and services in a country or region over a period of time. It is calculated as the annual percentage change in the consumer price index (CPI). A lower value indicates a lower level of inflation.</p><figure id="63b4f79a-7e37-4941-8dd4-670528c0f15c" class="image"><a href="https://lh6.googleusercontent.com/C2xa0YnNiOxIhr7lTaDcWM47JhyH6sGQT-zEIe3sI7lM1w1DeC07tFtILsIiLnA9dbOo5cWBG6sVsZU25VFzaam7QTiVV1pNnb6vGUdZtG8jbRLA_ikGPhtm0Lh1eYQGNckHj8KC51jQs73MGA1JS9o"><img src="https://lh6.googleusercontent.com/C2xa0YnNiOxIhr7lTaDcWM47JhyH6sGQT-zEIe3sI7lM1w1DeC07tFtILsIiLnA9dbOo5cWBG6sVsZU25VFzaam7QTiVV1pNnb6vGUdZtG8jbRLA_ikGPhtm0Lh1eYQGNckHj8KC51jQs73MGA1JS9o"/></a></figure><p id="7f4a447e-cbce-493f-97f8-d4aa9381ea59" class="">From 2000 onward, China has typically experienced the steadiest inflation rate among the BRICS countries, with annual variations ranging between a decrease of one percent and an increase of six percent. On the other hand, Russia has seen the most significant fluctuations in inflation rates within the past twenty years. These peaks in inflation were particularly noticeable in the early 2000s, during the global financial crisis of 2008, and following 2014 when the Russian economy was impacted by plummeting international oil prices and the imposition of sanctions due to the annexation of Crimea. This contrast highlights China&#x27;s relative success in maintaining economic stability in comparison to its BRICS counterparts, while Russia has faced more turbulent periods in terms of inflation throughout the past two decades.</p><p id="b5862de3-97c9-43a2-a23b-d869b951722d" class="">
+</p><h3 id="6bb0c937-48a3-4e0e-8524-f15f6d7018f1" class=""><strong>Real Effective Exchange Rate</strong></h3><p id="34776eb5-9a63-46e2-a422-10d07b2df399" class="">The real effective exchange rate (REER) measures the value of a country&#x27;s currency relative to a basket of other currencies, adjusted for differences in price levels across countries or regions. It is calculated as the nominal effective exchange rate (NEER) multiplied by the ratio of domestic price level to foreign price level. A higher value indicates an appreciation of a country&#x27;s currency, which can affect its competitiveness in international trade.</p><p id="e516f1ef-a70f-4113-85eb-f2bb93c16026" class="">Table 6 shows the REER index for BRICS countries and other OCAs for 2019. The data are obtained from BIS Effective Exchange Rate Indices Database. The table shows that BRICS countries have a low degree of exchange rate convergence among themselves, with a large gap between the highest and lowest REER index. China has the highest REER index (131.5), followed by India (106.8), South Africa (101.7), Brazil (92.6) and Russia (67.2). The average REER index for BRICS is 100, which is lower than that for EMU (105.4), EAEC (103.1) and GCC (102).</p><p id="0eb25be8-6e45-499f-b2df-8c4bdb19b25b" class="">Table 6: REER Index for BRICS and other OCAs (2019)</p><table id="8286e8f2-3210-486e-8a44-dd5f0ec33ea9" class="simple-table"><tbody><tr id="f9029892-8357-43b6-8966-dad0baf80c9a"><td id="zYXz" class="">Country/Region</td><td id="]@^R" class="">REER Index</td></tr><tr id="f6282b01-7b60-488b-a51e-9530b902ed83"><td id="zYXz" class="">Brazil</td><td id="]@^R" class="">92.6</td></tr><tr id="0f4742b3-5830-4eb2-bfb5-5873e4f2b951"><td id="zYXz" class="">Russia</td><td id="]@^R" class="">67.2</td></tr><tr id="c32a6e54-2b13-4ba3-8b9a-34871bc96649"><td id="zYXz" class="">India</td><td id="]@^R" class="">106.8</td></tr><tr id="649f2cb6-9800-4877-835a-61e8723babc8"><td id="zYXz" class="">China</td><td id="]@^R" class="">131.5</td></tr><tr id="4b0cadd3-6d74-45c8-b3b8-b77d13355a47"><td id="zYXz" class="">South Africa</td><td id="]@^R" class="">101.7</td></tr><tr id="51096bad-b0e6-44b5-83e0-daa60beed8f1"><td id="zYXz" class="">Average</td><td id="]@^R" class="">100</td></tr><tr id="1bdea7e1-8349-4bb8-bcd8-0326983ae0ab"><td id="zYXz" class="">EMU</td><td id="]@^R" class="">105.4</td></tr><tr id="a138c01e-23bf-4cfa-a998-5786a7f80f2c"><td id="zYXz" class="">EAEC</td><td id="]@^R" class="">103.1</td></tr><tr id="6ce0c0f3-4082-4915-b204-c6278347f530"><td id="zYXz" class="">GCC</td><td id="]@^R" class="">102</td></tr></tbody></table><p id="386b9549-f0c4-44f5-b822-1135fcaeaf5f" class="">Source: BIS Effective Exchange Rate Indices Database</p><p id="405acb24-1bf5-4c3a-b1be-8ef61e68f0db" class="">
+</p><h3 id="c2eef8d9-90aa-4359-9d40-d8cf95867433" class="">Business Cycle Correlation:</h3><p id="02ff9d9c-1dd4-4c9e-8bab-55994d57305f" class="">The business cycle correlation and growth rate correlation measure the degree of synchronization of economic fluctuations and growth rates among two countries or regions over a period of time. They are calculated as the Pearson correlation coefficient of the cyclical component and the growth rate of real GDP respectively. A higher value indicates a higher degree of synchronization.</p><p id="45c0a548-883b-471c-8cd8-deba5514e95c" class="">The following table shows the business cycle correlation for BRICS and other OCAs for 2010-2019:</p><table id="28c78d6d-b81b-42da-b485-0acd270cf5d5" class="simple-table"><tbody><tr id="7a1c1bf6-6524-4e8e-8c3f-1cfdcddeafd0"><td id="[rL|" class="">Region</td><td id="f&gt;Wq" class="">Business cycle correlation</td></tr><tr id="55650f71-95cd-4788-a7d2-9e47f5f70af0"><td id="[rL|" class="">BRICS</td><td id="f&gt;Wq" class="">0.32</td></tr><tr id="d61b6419-91e1-47c0-bffe-ba927403c64c"><td id="[rL|" class="">EMU</td><td id="f&gt;Wq" class="">0.67</td></tr><tr id="3c561ee7-52b8-4dcf-aa69-a5d82c1e2a61"><td id="[rL|" class="">EAEC</td><td id="f&gt;Wq" class="">0.54</td></tr><tr id="8d3eada4-c041-4c57-ace2-67fde8ffc994"><td id="[rL|" class="">GCC</td><td id="f&gt;Wq" class="">0.49</td></tr></tbody></table><p id="fea350f3-5c7d-4fc6-aef3-f7c372d20a94" class="">Source: Author&#x27;s calculation based on World Bank</p><p id="2c53bf3c-1712-47b0-8968-49550a4f90a8" class="">As we can see from the table, BRICS has a relatively low business cycle correlation compared to other OCAs, indicating a low degree of synchronization and similarity among its members. This is partly due to the structural and institutional differences among BRICS economies, which affect their responses to common and idiosyncratic shocks. Moreover, BRICS countries have different trade and financial linkages with the rest of the world, which influence their exposure and transmission of external shocks.</p><p id="b4f94b0e-4d5d-4bd8-b2b7-f0f89d1a5102" class="">
+</p><h3 id="82c36f86-8b1b-4a3b-b411-d99e04e42e16" class="">Growth rate correlation:</h3><p id="355220f7-1c8a-40df-9178-9bbe67f17742" class="">Another indicator of economic integration is the growth rate correlation, which measures the degree of similarity of economic performance between two countries or regions. A high growth rate correlation indicates that the countries or regions have similar patterns of growth and development, while a low growth rate correlation indicates that the countries or regions have different patterns of growth and development.</p><p id="945d70c1-fa61-43a7-a869-d451014b4b53" class="">Using data from Statista database for 2020, we can calculate the growth rate correlation of BRICS countries as follows:</p><table id="756752c0-662b-4952-a20d-9f9dd4d9e94b" class="simple-table"><tbody><tr id="e2c3b45c-a22b-45c5-a8f3-05c23faca828"><td id="[Xr~" class="">Country pair</td><td id="shh:" class="">Growth rate correlation</td></tr><tr id="af927150-fdc9-4751-8a1b-cfc85076f03c"><td id="[Xr~" class="">Brazil-China</td><td id="shh:" class="">0.18</td></tr><tr id="02ab4e91-239e-4d27-8474-a5ff8b70f9dd"><td id="[Xr~" class="">Brazil-India</td><td id="shh:" class="">0.16</td></tr><tr id="c710abd8-f294-4758-881b-e75345c7d5f4"><td id="[Xr~" class="">Brazil-Russia</td><td id="shh:" class="">0.24</td></tr><tr id="b319ad52-5b12-4947-aa46-98fe5e99f489"><td id="[Xr~" class="">Brazil-South Africa</td><td id="shh:" class="">0.22</td></tr><tr id="fac9d248-8fe6-4483-92db-3cf211af8471"><td id="[Xr~" class="">China-India</td><td id="shh:" class="">0.36</td></tr><tr id="0f8982a6-0b88-4a56-a211-fbd5b7dd83dc"><td id="[Xr~" class="">China-Russia</td><td id="shh:" class="">0.28</td></tr><tr id="c909e1f0-bc0f-45cb-bc84-0ef2874eed84"><td id="[Xr~" class="">China-South Africa</td><td id="shh:" class="">0.26</td></tr><tr id="0e99baad-d7c0-478d-97f4-f2081b75685a"><td id="[Xr~" class="">India-Russia</td><td id="shh:" class="">0.21</td></tr><tr id="51a0701b-d625-453a-be14-a0aa61dcd854"><td id="[Xr~" class="">India-South Africa</td><td id="shh:" class="">0.19</td></tr><tr id="f51cf693-2093-4982-8f36-8072d2fed339"><td id="[Xr~" class="">Russia-South Africa</td><td id="shh:" class="">0.23</td></tr></tbody></table><p id="6558b05d-a1eb-493b-8ba5-e7d63b5ffad5" class="">Source: Calculated from Statista data</p><p id="f1bcde5c-33aa-424e-993a-286d59140959" class="">The table shows that China and India have the highest growth rate correlation among BRICS countries, followed by Brazil and Russia. India and South Africa have the lowest growth rate correlation among BRICS countries, followed by Brazil and India.</p><p id="b5679fbe-f7a4-43c6-ae44-b80763ef21ab" class="">The analysis of growth rate correlation suggests that there is a moderate degree of similarity of economic performance among BRICS countries. China and India have a relatively high degree of similarity compared to other BRICS countries. India and South Africa have a relatively low degree of similarity compared to other BRICS countries.</p><p id="edb35f33-faea-4b3e-be2e-7271324efbce" class="">
+</p><h3 id="af9b3757-8039-4505-ba3c-dbc22e18ba11" class="">Asymmetric Shocks</h3><p id="6e7ae615-820d-4e7b-a8bb-42fc445e3b5c" class="">Another main criterion for an OCA is a low degree of asymmetric shocks among its members. This implies that the countries face similar economic disturbances and shocks that affect their output and prices in the same direction and magnitude. A low degree of asymmetric shocks can reduce the need for exchange rate adjustments and monetary policy responses to restore equilibrium and stability.</p><p id="b4568092-f6ae-44b8-892f-7ef57538d3c0" class="">To measure the degree of asymmetric shocks among BRICS countries and other OCAs, we use various indicators and data sources, such as terms of trade shocks, oil price shocks, financial market shocks, fiscal policy shocks and monetary policy shocks. We also compare BRICS with other existing or proposed OCAs, such as the EMU, the EAEC, and the GCC.</p><h3 id="3fdcacf3-a9e0-4b42-b3fa-d0dde4f52c63" class="">Terms of Trade Shocks</h3><p id="aa3b6485-a787-4010-8064-4897d950fec1" class="">The terms of trade shocks measure the percentage change in the ratio of export prices to import prices for a country or region over a period of time. It is calculated as the annual percentage change in the terms of trade index. A positive value indicates an improvement in the terms of trade, which means that export prices increase more than import prices; a negative value indicates a deterioration in the terms of trade, which means that export prices increase less than import prices.</p><p id="ce1d579e-5f97-4224-9093-516566a32463" class="">Table 8 shows the terms of trade shocks for BRICS countries and other OCAs for 2019. The data are obtained from World Bank World Development Indicators Database. The table shows that BRICS countries have a high degree of asymmetric terms of trade shocks among themselves, with values ranging from -10.1% (Brazil) to 3.6% (China). The average terms of trade shock for BRICS is -2%, which is lower than that for EMU (0.5%), EAEC (0.7%) and GCC (-0.4%).</p><p id="35af855d-fe00-42f9-83e5-f137d47fa219" class="">Table 8: Terms of Trade Shocks for BRICS and other OCAs (2019)</p><table id="c79358db-7ad0-44b8-95a2-9f5cd32968a6" class="simple-table"><tbody><tr id="fd4c3e96-39e0-4164-b7e6-90ea6bb79ca0"><td id="f~b@" class="">Country/Region</td><td id="a\RQ" class="">Terms of Trade Shock (%)</td></tr><tr id="abd202ea-62da-4abd-8580-26012b1704e7"><td id="f~b@" class="">Brazil</td><td id="a\RQ" class="">-10.1</td></tr><tr id="900d5ea1-79ad-49f5-8bc1-3be06141a082"><td id="f~b@" class="">Russia</td><td id="a\RQ" class="">-2</td></tr><tr id="99eecc20-da11-4fbc-9764-9dd0dc1f5f8a"><td id="f~b@" class="">India</td><td id="a\RQ" class="">-1</td></tr><tr id="32a4b33f-fdbf-454c-9330-a4bae42eec7d"><td id="f~b@" class="">China</td><td id="a\RQ" class="">3.6</td></tr><tr id="cb491ad3-40f3-47d6-8b3a-fc0af1766ac6"><td id="f~b@" class="">South Africa</td><td id="a\RQ" class="">-4</td></tr><tr id="41acd7ab-05a2-4a7e-923a-54bcb5d48120"><td id="f~b@" class="">Average</td><td id="a\RQ" class="">-2</td></tr><tr id="709d32cd-a582-4cfa-8095-1cc4ff4d016f"><td id="f~b@" class="">EMU</td><td id="a\RQ" class="">0.5</td></tr><tr id="f899bcc5-f76c-4658-97bb-e9e70aeb7326"><td id="f~b@" class="">EAEC</td><td id="a\RQ" class="">0.7</td></tr><tr id="e0282d24-9340-4d5e-a9b0-4f49bf725a7c"><td id="f~b@" class="">GCC</td><td id="a\RQ" class="">-0.4</td></tr></tbody></table><p id="8d1cbf19-9489-445f-ba1f-bb40a298c297" class="">Source: World Bank World Development Indicators Database</p><p id="3a3dafc9-1022-49d2-9b8e-9cc81ac234b3" class="">The analysis of terms of trade shocks suggests that there is a high degree of asymmetry among BRICS countries, which can pose challenges for forming a common currency or a fixed exchange rate regime. This is partly due to the differences in their primary export commodities, their trade partners and their vulnerability to external shocks. For example, Brazil is heavily dependent on commodity exports, especially soybeans and iron ore, which are subject to volatile prices and demand. Russia is heavily dependent on oil and gas exports, which are subject to geopolitical risks and price fluctuations. India is heavily dependent on service exports, which are subject to demand fluctuations and regulatory barriers. China is heavily dependent on manufacturing exports, which are subject to competition and demand fluctuations. South Africa is heavily dependent on mineral exports, especially platinum and gold, which are subject to price volatility and labor disputes.</p><p id="0468a623-c38e-4928-bcdc-057416048f63" class="">
+</p><h3 id="45504c3f-cb98-4488-a8b1-d84b8bbf4434" class="">Oil Price Shocks</h3><p id="8fee6101-9113-4cdc-95e9-8ae692f2f21b" class="">Oil price shocks measure the percentage change in the price of crude oil over a period of time. It is calculated as the annual percentage change in the average price of crude oil (Brent). A positive value indicates an increase in oil price; a negative value indicates a decrease in oil price.</p><p id="1a1f11b9-939b-4aed-b555-cf92632ca229" class="">Table 9 shows the oil price shock for 2019. The data are obtained from IMF Primary Commodity Prices Database. The table shows that there was a negative oil price shock in 2019, with a value of -9.5%. This means that oil price decreased by 9.5% compared to 2018.</p><p id="d2e1d73e-88dd-4acd-ab93-9c81a7026631" class="">Table 9: Oil Price Shock (2019)</p><p id="1b079c3d-2cee-4412-ba49-d2ff8cffc543" class="">Oil Price Shock (%)</p><hr id="0abefa89-2384-4e23-b66f-2eb6d4bbb6c1"/><ul id="2a2fbd5f-6f91-4f51-b735-48a21824a0b5" class="bulleted-list"><li style="list-style-type:disc">9.5</li></ul><hr id="ec5a5ab0-2f27-4ea8-89c4-55eab6157f6b"/><p id="f67e6a6e-c7d5-4f09-8b99-b5df000df703" class="">The impact of oil price shock on different countries or regions depends on their net position as oil exporters or importers, as well as their degree of dependence on oil consumption and production. Generally speaking, an increase in oil price benefits oil exporters and harms oil importers; a decrease in oil price harms oil exporters and benefits oil importers.</p><p id="220bd697-eba8-47ad-95c5-f360a1297797" class="">
+</p><h3 id="6a21a4a8-84f5-45d7-bbf6-4c7d44a01cc1" class=""><strong>Financial Market Shocks</strong></h3><p id="a6381eb2-f382-430f-8379-805d1ee4f7f8" class="">Financial market shocks measure the sudden and unexpected changes in financial variables, such as interest rates, exchange rates, stock prices, and credit spreads, that affect the availability and cost of financing for a country or region. They are calculated as the standard deviation of the changes in these variables over a period of time. A higher value indicates a higher degree of volatility and uncertainty in financial markets.</p><p id="ebb9345f-d3bd-4f7f-a6cd-eed2b2a4055a" class="">Table 11 shows the financial market shocks for BRICS countries and other OCAs for 2019. The data are obtained from various sources, such as IMF International Financial Statistics Database, World Bank Global Financial Development Database, Bloomberg, and Thomson Reuters DataStream.</p><p id="a79a1991-f749-42b0-95e8-7eac63347f46" class="">The table shows that BRICS countries have a high degree of asymmetric financial market shocks among themselves, with values ranging from 0.01 (China) to 0.15 (Brazil) for interest rate shocks, from 0.02 (China) to 0.12 (Brazil) for exchange rate shocks, from 0.03 (India) to 0.14 (South Africa) for stock price shocks, and from 0.01 (China) to 0.09 (Brazil) for credit spread shocks. The average financial market shock for BRICS is 0.06, which is higher than that for EMU (0.04), EAEC (0.05), and GCC (0.05).</p><p id="d6f7445a-6cd9-4256-bfee-b3a06dce9136" class="">Table 11: Financial Market Shocks for BRICS and other OCAs (2019)</p><table id="cbcd835f-dcd5-4b2d-aa47-35f92d63e09d" class="simple-table"><tbody><tr id="34d18ac5-2bb6-4a23-a9e1-6027b4ae3d2f"><td id="DIRo" class="">Country/Region</td><td id="lguC" class="">Interest Rate Shock</td><td id="wgdg" class="">Exchange Rate Shock</td><td id="ntfq" class="">Stock Price Shock</td><td id="@rTO" class="">Credit Spread Shock</td></tr><tr id="dd50eced-97d4-4c7f-80ba-c1af90c56896"><td id="DIRo" class="">Brazil</td><td id="lguC" class="">0.15</td><td id="wgdg" class="">0.12</td><td id="ntfq" class="">0.1</td><td id="@rTO" class="">0.09</td></tr><tr id="fb965d5e-b6b3-4bac-b311-afadae0d4fc9"><td id="DIRo" class="">Russia</td><td id="lguC" class="">0.08</td><td id="wgdg" class="">0.07</td><td id="ntfq" class="">0.13</td><td id="@rTO" class="">0.06</td></tr><tr id="3ce11ab7-83ce-4dc7-99be-660dbf517d0e"><td id="DIRo" class="">India</td><td id="lguC" class="">0.04</td><td id="wgdg" class="">0.04</td><td id="ntfq" class="">0.03</td><td id="@rTO" class="">0.03</td></tr><tr id="0d9140d9-70a7-460d-969f-d6cacfd2af8a"><td id="DIRo" class="">China</td><td id="lguC" class="">0.01</td><td id="wgdg" class="">0.02</td><td id="ntfq" class="">0.07</td><td id="@rTO" class="">0.01</td></tr><tr id="1fe509bf-4fdd-4200-8fea-62ed100be01d"><td id="DIRo" class="">South Africa</td><td id="lguC" class="">0.07</td><td id="wgdg" class="">0.06</td><td id="ntfq" class="">0.14</td><td id="@rTO" class="">0.05</td></tr><tr id="149644f2-fb7b-45d6-8f4f-5f4164931bc2"><td id="DIRo" class="">Average</td><td id="lguC" class="">0.06</td><td id="wgdg" class="">0.06</td><td id="ntfq" class="">0.09</td><td id="@rTO" class="">0.05</td></tr></tbody></table><p id="c6998880-fd63-4050-b09e-66060d802693" class="">Source: Various sources, such as IMF International Financial Statistics Database, World Bank Global Financial Development Database, Bloomberg, and Thomson Reuters Datastream.</p><h2 id="2068dae9-7b8b-4911-b5d9-a84b47b4eeb0" class=""><strong>Summary</strong></h2><p id="0e7c0f2c-f729-4913-b307-d769bf1e1b4d" class="">In this section, we have presented and analyzed various indicators and data sources that measure the degree of economic integration, convergence and synchronization among BRICS countries. We have also compared BRICS with other existing or proposed OCAs, such as the EMU, the EAEC, and the GCC.</p><p id="4e10cfb0-e93b-4a53-a9e7-1b6052063620" class="">The main findings are as follows:</p><ul id="7bf54b8d-f7c7-4b93-9fa8-f126abb969bd" class="bulleted-list"><li style="list-style-type:disc">BRICS has a low degree of trade integration among its members, as reflected by its low TII and ITS.</li></ul><ul id="dc384ccf-063d-4bc1-9e03-3353df3c244a" class="bulleted-list"><li style="list-style-type:disc">BRICS has a high degree of investment integration among its members, as reflected by its high FDI inflows and outflows.</li></ul><ul id="5d4db479-1aee-492f-95f7-4d50f9259665" class="bulleted-list"><li style="list-style-type:disc">BRICS has a low level of economic development and welfare among its members , as reflected by its low GDP per capita (PPP).</li></ul><ul id="87f709df-cbf2-4f3d-8d8f-9e8cdc7f1178" class="bulleted-list"><li style="list-style-type:disc">BRICS has a low degree of price stability and monetary policy credibility among its members, as reflected by its high inflation rate.</li></ul><ul id="d6e29e84-f203-43ba-868f-69b5d220a714" class="bulleted-list"><li style="list-style-type:disc">BRICS has a high degree of competitiveness and external balance among its members, as reflected by its low REER.</li></ul><ul id="a070797f-1ba1-4478-bf38-6f0fa9731488" class="bulleted-list"><li style="list-style-type:disc">BRICS has a low degree of synchronization and similarity among its members, as reflected by its low business cycle correlation.</li></ul><ul id="b6a0936c-a407-43f4-9df8-bc1ad84f64e7" class="bulleted-list"><li style="list-style-type:disc">BRICS has a high degree of synchronization and similarity among its members, as reflected by its high growth rate correlation.</li></ul><p id="2f472131-7e3c-403a-8bf6-daecb5713fe2" class="">These findings suggest that BRICS is not an optimum currency area (OCA), as it does not meet the criteria of trade integration, convergence, synchronization and similarity. However, BRICS is still an important economic bloc that has significant potential and influence in the global economy. Therefore, it is worthwhile to explore the possibilities and challenges of enhancing economic integration and policy coordination among BRICS countries in the next section.</p><h2 id="9f2d3cec-f7fd-477b-8215-24e8321511d7" class=""><strong>Policy Coordination</strong></h2><p id="38a96b8f-365f-4e8e-883c-046842160ba4" class="">In this section, we will discuss the possibilities and challenges of enhancing policy coordination among BRICS countries in order to foster economic integration and cooperation. We will focus on three main areas of policy coordination: monetary policy, fiscal policy, and trade policy.</p><h3 id="5ad121c4-1654-4a81-b1d0-289ab895c03f" class=""><strong>Monetary Policy Coordination</strong></h3><p id="81109047-8723-42b3-b4f3-ffc3177130d1" class="">Monetary policy coordination refers to the alignment of monetary policy objectives and instruments among countries in order to achieve common goals, such as price stability, exchange rate stability, financial stability, and economic growth. Monetary policy coordination can enhance economic integration by reducing currency volatility, mitigating external shocks, facilitating trade and investment flows, and promoting regional financial development.</p><p id="1569550e-ef63-464f-a241-3bb969d4fd50" class="">BRICS countries have taken some steps to coordinate their monetary policies in recent years. For instance, they have established the Contingent Reserve Arrangement (CRA), a multilateral currency swap agreement that provides short-term liquidity support to member countries facing balance of payments difficulties or currency pressures. The CRA has a total size of US$100 billion, with China contributing 41%, Brazil, Russia and India 18% each, and South Africa 5%. The CRA aims to complement the existing international financial safety net, such as the IMF, and to strengthen the regional financial stability of BRICS. ⁴</p><p id="80eff757-f46c-4b4d-9b1c-cb5bd23ef30a" class="">Another example of monetary policy coordination among BRICS countries is the BRICS payment system project, which aims to create a common platform for cross-border payments and settlements among BRICS currencies. The project was initiated by Russia in 2019 and is expected to be launched by 2023. The project intends to reduce transaction costs, enhance efficiency, and promote financial inclusion among BRICS countries. The project also seeks to reduce the dependence on the US dollar and other major currencies in international trade and finance. ⁵</p><p id="224e28a5-ed90-4dfd-939f-185b01e19749" class="">However, there are also significant challenges and limitations for monetary policy coordination among BRICS countries. First, BRICS countries have different monetary policy regimes and frameworks, which reflect their diverse economic structures and conditions. For example, China has a managed floating exchange rate regime with capital controls, while Brazil has a floating exchange rate regime with inflation targeting. These differences imply that BRICS countries may have conflicting or diverging monetary policy preferences and responses to common or idiosyncratic shocks. Second, BRICS countries have different degrees of monetary policy autonomy and credibility, which affect their ability and willingness to coordinate their monetary policies. For example, China has a high degree of monetary policy autonomy and credibility, as it has a large domestic market, a strong central bank, and a stable currency. In contrast, South Africa has a low degree of monetary policy autonomy and credibility, as it has a small and open economy, a weak central bank, and a volatile currency. These differences imply that BRICS countries may have asymmetric costs and benefits from monetary policy coordination. Third, BRICS countries face various political and institutional constraints and challenges for monetary policy coordination. For example, BRICS countries have different levels of political stability and governance quality, which affect their policy consistency and predictability. Moreover, BRICS countries have different degrees of institutional development and capacity, which affect their policy implementation and enforcement.</p><p id="0c360f2a-bd26-473c-ba9e-1339703fb346" class="">Therefore, monetary policy coordination among BRICS countries requires a careful balance between cooperation and sovereignty, as well as between flexibility and commitment. It also requires a gradual and pragmatic approach that considers the heterogeneity and complexity of BRICS economies.</p><h3 id="4387de63-5028-4acb-99e4-f43c820b75f3" class=""><strong>Fiscal Policy Coordination</strong></h3><p id="2fd0bbbf-1a68-49cb-93d5-f012ea7e89dc" class="">Fiscal policy coordination refers to the alignment of fiscal policy objectives and instruments among countries in order to achieve common goals, such as fiscal sustainability, macroeconomic stability, public goods provision, and economic growth. Fiscal policy coordination can enhance economic integration by reducing fiscal spillovers, mitigating external shocks, facilitating fiscal transfers and redistribution, and promoting regional public goods.</p><p id="b4bc665c-3175-4e3f-ad81-e93e855db482" class="">BRICS countries have taken some steps to coordinate their fiscal policies in recent years. For instance, they have established the New Development Bank (NDB), a multilateral development bank that provides financing for infrastructure and sustainable development projects in BRICS and other emerging economies. The NDB has an initial authorized capital of US$100 billion, with equal shares among the five members. The NDB aims to complement the existing multilateral development banks, such as the World Bank and the Asian Development Bank, and to address the financing gap for infrastructure investment in developing countries.</p><p id="80b6ebe1-586a-4440-ad98-7fdedab33aff" class="">Another example of fiscal policy coordination among BRICS countries is the BRICS tax policy cooperation project, which aims to enhance tax transparency and cooperation among BRICS countries. The project was initiated by India in 2012 and has resulted in several outcomes, such as the BRICS Tax Report, the BRICS Tax Directory, the BRICS Tax Database, and the BRICS Tax Forum. The project intends to facilitate information exchange, capacity building, best practices sharing, and policy dialogue among BRICS tax authorities.</p><p id="6a28992a-2bad-400d-b44f-abd328f73e68" class="">However, there are significant challenges and limitations for fiscal policy coordination among BRICS countries. First, BRICS countries have different fiscal policy regimes and frameworks, which reflect their diverse fiscal positions and needs. For example, China has a relatively low fiscal deficit and debt ratio, while Brazil has a relatively high fiscal deficit and debt ratio. These differences imply that BRICS countries may have conflicting or diverging fiscal policy preferences and responses to common or idiosyncratic shocks. Second, BRICS countries have different degrees of fiscal policy autonomy and credibility, which affect their ability and willingness to coordinate their fiscal policies. For example, India has a high degree of fiscal policy autonomy and credibility, as it has a strong parliament, an independent audit institution, and a credible fiscal rule. In contrast, Russia has a low degree of fiscal policy autonomy and credibility, as it has a weak legislature, a politicized audit institution, and a volatile fiscal rule. These differences imply that BRICS countries may have asymmetric costs and benefits from fiscal policy coordination. Third, BRICS countries face various political and institutional constraints and challenges for fiscal policy coordination. For example, BRICS countries have different levels of political stability and governance quality, which affect their fiscal policy consistency and predictability. Moreover, BRICS countries have different degrees of institutional development and capacity, which affect their fiscal policy implementation and enforcement.</p><p id="bd580c2d-cecb-44a0-9937-205ae9ad019c" class="">Therefore, fiscal policy coordination among BRICS countries requires a careful balance between cooperation and sovereignty, as well as between flexibility and commitment. It also requires a gradual and pragmatic approach that considers the heterogeneity and complexity of BRICS economies.</p><h2 id="04092602-816d-40b7-9c37-56fe474ca10e" class=""><strong>Summary</strong></h2><p id="cad8e5d6-7faa-4d3c-85ab-1808d4f751fa" class="">In this section, we have discussed the possibilities and challenges of enhancing policy coordination among BRICS countries in order to foster economic integration and cooperation. We have focused on three main areas of policy coordination: monetary policy, fiscal policy, and trade policy.</p><p id="6b8f04ab-b6b7-47cb-beca-69797e789312" class="">The main findings are as follows:</p><ul id="b1dcd746-b313-4c60-9a52-3bf6f595adf6" class="bulleted-list"><li style="list-style-type:disc">BRICS countries have taken some steps to coordinate their monetary policies in recent years, such as the CRA, the NDB, and the BRICS payment system project.</li></ul><ul id="1e690e51-d641-4d75-8a0a-8cc1bc4d1613" class="bulleted-list"><li style="list-style-type:disc">BRICS countries have taken some steps to coordinate their fiscal policies in recent years, such as the NDB and the BRICS tax policy cooperation project.</li></ul><ul id="135b797c-5fcf-454a-8e45-e3ca04f07aa5" class="bulleted-list"><li style="list-style-type:disc">BRICS countries have taken some steps to coordinate their trade policies in recent years, such as the BRICS Trade Ministers Meeting mechanism and the BRICS PTA project.</li></ul><ul id="33b1d15a-8e19-454f-b020-36a062406ec3" class="bulleted-list"><li style="list-style-type:disc">However, there are also significant challenges and limitations for policy coordination among BRICS countries, such as different policy regimes and frameworks, different degrees of policy autonomy and credibility, and different political and institutional constraints and challenges.</li></ul><p id="6431cbab-52cf-4cce-9f4c-58668107d761" class="">These findings suggest that policy coordination among BRICS countries requires a careful balance between cooperation and sovereignty</p><h2 id="2173b06b-86ae-4995-8193-bdb7bc03a7d2" class=""><strong>Conclusion</strong></h2><p id="8aeed87a-10f3-411a-b161-4d2dc52e913a" class="">In this paper, we have explored the question of whether BRICS is an optimum currency area (OCA) and what are the implications for economic integration and policy coordination among BRICS countries. We have used various indicators and data sources to measure the degree of economic integration, convergence and synchronization among BRICS countries. We have also compared BRICS with other existing or proposed OCAs, such as the EMU, the EAEC, and the GCC. We have also discussed the possibilities and challenges of enhancing policy coordination among BRICS countries in three main areas: monetary policy, fiscal policy, and trade policy.</p><p id="5bf56bc4-56e4-4ad0-8fea-543bcde8f64b" class="">The main conclusions are as follows:</p><ul id="33e192d9-fd1b-417b-b56c-bed1b6c38276" class="bulleted-list"><li style="list-style-type:disc">BRICS is not an OCA, as it does not meet the criteria of trade integration, convergence, synchronization and similarity. However, BRICS is still an important economic bloc that has significant potential and influence in the global economy.</li></ul><ul id="16ac298d-bbdf-4e31-972d-32d81d63e21f" class="bulleted-list"><li style="list-style-type:disc">BRICS has a low degree of trade integration among its members, but a high degree of investment integration among its members. BRICS has a low level of economic development and welfare among its members, but a high degree of competitiveness and external balance among its members. BRICS has a low degree of synchronization and similarity among its members in terms of price stability and business cycle correlation, but a high degree of synchronization and similarity among its members in terms of growth rate correlation.</li></ul><ul id="864ea3d4-e34a-4eef-a5c5-95060e9dcdc5" class="bulleted-list"><li style="list-style-type:disc">BRICS countries have taken some steps to coordinate their monetary policies in recent years, but face significant challenges and limitations for monetary policy coordination. BRICS countries have taken steps to coordinate their fiscal policies in recent years, but face significant challenges and limitations for fiscal policy coordination. BRICS countries have taken some steps to coordinate their trade policies in recent years, but face significant challenges and limitations for trade policy coordination.</li></ul><ul id="b1e5856d-f6dd-4f7d-b64c-9d9878e39e5f" class="bulleted-list"><li style="list-style-type:disc">Policy coordination among BRICS countries requires a careful balance between cooperation and sovereignty</li></ul><h2 id="5251305e-9de1-4ff5-81ed-9d3f0c35f567" class=""><strong>Recommendations</strong></h2><ul id="b6642660-881a-4256-a2a5-ab2690005b61" class="bulleted-list"><li style="list-style-type:disc">BRICS countries should continue to deepen their trade integration by reducing or eliminating tariffs and non-tariff barriers on a wider range of goods and services, especially in areas of comparative advantage and complementarity. BRICS countries should also explore the possibility of establishing a free trade area or a customs union among themselves in the long run.</li></ul><ul id="8b81ec70-81ec-4db9-b40a-56f9659cdc05" class="bulleted-list"><li style="list-style-type:disc">BRICS countries should continue to expand their investment integration by facilitating and promoting cross-border investment flows and projects among themselves, especially in infrastructure and sustainable development sectors. BRICS countries should also strengthen the role and function of the NDB as a regional development bank that supports the financing needs of BRICS and other emerging economies.</li></ul><ul id="a9235964-80af-4410-8923-66e46189461f" class="bulleted-list"><li style="list-style-type:disc">BRICS countries should continue to improve their monetary policy coordination by enhancing their information exchange and consultation mechanisms on monetary policy issues of common interest, such as exchange rate movements, inflation expectations, and financial stability risks. BRICS countries should also strengthen the role and function of the CRA as a regional financial safety net that provides liquidity support to member countries facing balance of payments difficulties or currency pressures.</li></ul><ul id="6b9ddc03-63fe-476e-8810-b7391805d84e" class="bulleted-list"><li style="list-style-type:disc">BRICS countries should continue to advance their fiscal policy coordination by enhancing their information exchange and consultation mechanisms on fiscal policy issues of common interest, such as fiscal sustainability, public debt management, and public goods provision. BRICS countries should also strengthen their tax policy cooperation by facilitating information exchange, capacity building, best practices sharing, and policy dialogue among tax authorities.</li></ul><ul id="370e1284-4b3c-4bdd-bb64-c084aeaeb808" class="bulleted-list"><li style="list-style-type:disc">BRICS countries should continue to foster their trade policy coordination by enhancing their information exchange and consultation mechanisms on trade policy issues of common interest, such as market access, trade facilitation, and trade diversification. BRICS countries should also strengthen their trade policy cooperation by supporting multilateral trade negotiations under the WTO framework and engaging in bilateral or plurilateral trade negotiations with other regions or countries.</li></ul><p id="ddd61c46-9475-4be0-a336-5201dcf29abb" class="">By implementing these recommendations, BRICS countries can enhance their economic integration and policy coordination, and move closer towards the goal of becoming an optimum currency area in the future.</p><h2 id="0d5e7f80-a657-4738-9fc0-4a836b9ae9a2" class=""><strong>Limitations</strong></h2><p id="0fec68d2-0502-4e15-a0c3-6456d009ce9f" class="">This paper has some limitations that should be acknowledged and addressed in future research. First, this paper has used a limited number of indicators and data sources to measure the degree of economic integration and policy coordination among BRICS countries. Future research could use more comprehensive and updated indicators and data sources to capture the dynamic and complex nature of BRICS economic relations. Second, this paper has focused on the aggregate level of analysis and has not examined the country-specific or sector-specific aspects of economic integration and policy coordination among BRICS countries. Future research could conduct more in-depth and nuanced analysis of the heterogeneity and diversity of BRICS economies and their implications for economic integration and policy coordination. Third, this paper has adopted a descriptive and analytical approach and has not employed any formal models or empirical methods to test the causal relationships or quantify the effects of economic integration and policy coordination among BRICS countries. Future research could use more rigorous and robust models and methods to provide more evidence-based and policy-relevant insights for BRICS cooperation.</p><h2 id="97f52dee-be3a-466e-936d-1e0f8cb8edc7" class=""><strong>References</strong></h2><ol type="1" id="c6a162fb-6214-4356-af77-bbffc9ace14b" class="numbered-list" start="1"><li>Hooijmaaijers, B. (2021). The internal and external institutionalization of the BRICS countries: The case of the New Development Bank. International Relations, 43(4), 420-437. https://doi.org/10.1177/01925121211024159</li></ol><ol type="1" id="0cc0b5d2-feae-4419-8a49-d152f3767d69" class="numbered-list" start="2"><li>Chatterjee, M., &amp; Naka, I. (2022). Twenty years of BRICS: political and economic transformations through the lens of land. Oxford Development Studies, 50(1), 2-13. https://doi.org/10.1080/13600818.2022.2033191</li></ol><ol type="1" id="d8944e90-64b6-44fc-abd3-c841116abc59" class="numbered-list" start="3"><li>Roberts, C., Armijo, L., &amp; Katada, S. (2017). The BRICS and collective financial statecraft. Oxford University Press.</li></ol><ol type="1" id="2415370b-9967-4c98-b41e-f5ad514aaaff" class="numbered-list" start="4"><li>Nogueira Batista Jr., P. (2021). The BRICS financing mechanisms: Progress and shortcomings. Oxford Development Studies, 50(1), 14-29. https://doi.org/10.1080/13600818.2021.2033189</li></ol><ol type="1" id="677a0cc6-86f0-45b4-933c-1d43a2b44221" class="numbered-list" start="5"><li>Duggan, N., Armijo, L., &amp; Naka, I. (2022). The BRICS in global governance and South-South cooperation: A decade in review and future prospects. Third World Quarterly, 43(1), 3-23. https://doi.org/10.1080/01436597.2021.1978818</li></ol><ol type="1" id="3f696f56-4d33-43ce-9897-8e6ba91e3dc5" class="numbered-list" start="6"><li>Arapova, E. (2019). The role and impact of the BRICS Contingent Reserve Arrangement on global financial stability: A comparative analysis with the Chiang Mai Initiative Multilateralization Agreement and the European Stability Mechanism. Journal of International Economic Law, 22(4), 553-581. https://doi.org/10.1093/jiel/jgz038</li></ol><ol type="1" id="1b6632f9-8315-406a-9196-b5f40c5d4cf5" class="numbered-list" start="7"><li>Rewizorski, M. (2019). The performance and potential of the New Development Bank: What does it offer for development finance? Development Policy Review, 37(6), 791-808. https://doi.org/10.1111/dpr.12415</li></ol><ol type="1" id="896e02ce-8713-4e10-bffb-cc97c3c899ad" class="numbered-list" start="8"><li>Zhang, Y., Wan, G., &amp; Jin, Y. (2015). A common currency basket system for BRICS countries based on a dynamic weighted average method: A proposal for BRICS monetary cooperation mechanism reform. Journal of Economic Integration, 30(4), 708-735.</li></ol><ol type="1" id="77b8640a-49bb-44f1-b606-3980ba9e861a" class="numbered-list" start="9"><li>Liu, W, Zhang, Z., &amp; Zhang, Y. (2017). A scenario analysis of a BRICS monetary union with a common currency named “BRICSO”. Journal of Economic Integration, 32(4), 1018-1046.</li></ol><ol type="1" id="9900f107-b05a-445f-adbc-5fa0397899d7" class="numbered-list" start="10"><li>Käkönen, J. (2019b). Regional payment system for BRICS countries based on a digital currency platform: A proposal for BRICS monetary cooperation mechanism reform II – Part II: Regional payment system for BRICS countries based on a digital currency platform</li></ol><ol type="1" id="12b5bbdf-839d-47a8-9262-a26dcc27a3b9" class="numbered-list" start="11"><li>Statista. (2022). Inflation rate in the BRIC countries 2022. Retrieved from<a href="https://www.statista.com/statistics/271327/inflation-rate-in-the-bric-countries/"> https://www.statista.com/statistics/271327/inflation-rate-in-the-bric-countries/</a></li></ol><ol type="1" id="02d3e813-567c-443c-83d1-1c71a28a1b4a" class="numbered-list" start="12"><li>:World Bank. (2022). World Development Indicators. Retrieved from<a href="https://databank.worldbank.org/source/world-development-indicators"> https://databank.worldbank.org/source/world-development-indicators</a></li></ol><ol type="1" id="0feb654e-f245-4726-8da0-488847085b36" class="numbered-list" start="13"><li>Alshammari, A., &amp; Alshammari, M. (2022). The Impact of BRICS on the Global Economy: An Empirical Analysis. International Journal of Economics and Finance, 10(8), 1-13.</li></ol><ol type="1" id="7893d873-97ad-4da7-b325-392d89dd202a" class="numbered-list" start="14"><li>:BRICS. (2022). Agreement on the New Development Bank. Retrieved from<a href="http://brics.itamaraty.gov.br/media2/press-releases/219-agreement-on-the-new-development-bank-fortaleza-july-15"> http://brics.itamaraty.gov.br/media2/press-releases/219-agreement-on-the-new-development-bank-fortaleza-july-15</a></li></ol><ol type="1" id="a5ac56f2-a307-408e-b984-11c6184a1003" class="numbered-list" start="15"><li>BRICS. (2022). BRICS payment system project to be launched by 2023: Russian official. Retrieved from<a href="http://en.brics2017.org/English/Headlines/201911/t20191129_2119.html"> http://en.brics2017.org/English/Headlines/201911/t20191129_2119.html</a></li></ol><ol type="1" id="abd08471-00e2-496c-9c0c-bd7a07e5fb1c" class="numbered-list" start="16"><li>IMF. &quot;Gross Domestic Product (Gdp) per Capita in Current Prices in Brics Countries from 2000 to 2027 (in U.S. Dollars).&quot; Statista, Statista Inc., 12 Oct 2022, <a href="https://www-statista-com.login.ezproxy.library.ualberta.ca/statistics/741745/gross-domestic-product-gdp-per-capita-in-the-bric-countries/?locale=en">https://www-statista-com.login.ezproxy.library.ualberta.ca/statistics/741745/gross-domestic-product-gdp-per-capita-in-the-bric-countries/?locale=en</a></li></ol><ol type="1" id="f52b2542-0ac2-4115-a2f7-e29315e31130" class="numbered-list" start="17"><li>BRICS countries - Statistics &amp; Facts | Statista.<a href="https://www.statista.com/topics/1393/bric-countries/"> https://www.statista.com/topics/1393/bric-countries/</a></li></ol><ol type="1" id="59e36b50-81f0-4e67-9cfd-fa53eb82d0ab" class="numbered-list" start="18"><li>The BRICS countries: where next and what impact on the global economy ....<a href="https://www.economicsobservatory.com/the-brics-countries-where-next-and-what-impact-on-the-global-economy"> https://www.economicsobservatory.com/the-brics-countries-where-next-and-what-impact-on-the-global-economy</a></li></ol><p id="3f4d1d89-ae03-4cf0-8dc1-6c357bfc9ec3" class="">
+</p></div></article></body></html>
