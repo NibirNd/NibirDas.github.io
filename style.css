@@ -26,15 +26,15 @@
 }
 
 .background1{
-	background-image: url('assets/images/background/bg1.png');
+	background-image: url("Assets/Images/background/bg1.png");
 }
 
 .background2{
-	background-image: url('assets/images/background/bg2.png');
+	background-image: url("Assets/Images/background/bg2.png");
 }
 
 .background3{
-	background-image: url('assets/images/background/bg3.png');
+	background-image: url("Assets/Images/background/bg3.png");
 }
 
 .skill{
@@ -42,7 +42,7 @@
 }
 
 #aboutme{
-	background-image: url('assets/images/bio/bg-4.png');
+	background-image: url("Assets/Images/bio/me.jpg");
 	background-repeat: no-repeat;
 	background-size: 700px;
 	background-position-x: center;
